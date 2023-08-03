@@ -482,3 +482,15 @@ variable "target_secret_namespace" {
   type        = string
   default     = "grafana-operator"
 }
+
+variable "enable_adotcollector_metrics" {
+  description = "Enables collection of ADOT collector metrics"
+  type        = bool
+  default     = true
+}
+
+variable "grafana_ADOThealth_dashboard_url" {
+  description = "Dashboard URL for ADOThealth Grafana Dashboard JSON"
+  type = string
+  default = "https://github.com/anaelefth/aws-observability-accelerator/blob/1be5edb165a48957f4379c3683ef52966ce98c3a/artifacts/grafana-dashboards/eks/infrastructure/ADOThealth.json"
+}
