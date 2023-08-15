@@ -180,6 +180,10 @@ module "helm_addon" {
     {
       name  = "istioPrometheusMetricsEndpoint"
       value = try(var.istio_config.prometheus_metrics_endpoint, local.istio_pattern_config.prometheus_metrics_endpoint)
+    },
+    {
+      name  = "enableAdotcollectorMetrics"
+      value = var.enable_adotcollector_metrics
     }
   ]
 
