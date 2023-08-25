@@ -7,8 +7,6 @@ The OpenTelemetry collector produces metrics to monitor the entire pipeline. In 
 
 Below diagram shows an example data flow and the components in an ADOT collector:
 
-![ADOTCollectorComponents](https://github.com/RAMathews/terraform-aws-observability-accelerator/assets/114662591/29954928-5392-4a9c-aa2b-6196a0f3b0cb)
-
 In this dashboard, there are five sections. Each section has [metrics](https://aws-observability.github.io/observability-best-practices/guides/operational/adot-at-scale/operating-adot-collector/#collecting-health-metrics-from-the-collector) relevant to the various [component’s](https://opentelemetry.io/docs/demo/collector-data-flow-dashboard/#data-flow-overview) of the AWS Distro for OpenTelemetry(ADOT)collector:
 
 ### Receivers
